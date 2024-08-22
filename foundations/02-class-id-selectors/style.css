@@ -1,0 +1,16 @@
+p.odd{
+    background-color: rgb(255, 0, 191);
+    font-family: Verdana, DejaVu Sans, ans-serif;
+}
+div#second{
+    color: rgba(5, 5, 110, 0.801);
+    font-size: 36px;
+}
+p.third{
+    font-size: 24px;
+}
+div#fourth{
+    font-size: 24px;
+    font-weight:bold;
+    background-color: rgb(44, 215, 44);
+}
