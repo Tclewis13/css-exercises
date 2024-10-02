@@ -5,6 +5,13 @@
 
 .container {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 2fr 1fr 11fr 1fr;
+  justify-content: center;
+  gap: 4px;
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
 .container div {
@@ -13,10 +20,15 @@
   font-family: Helvetica;
   font-weight: bold;
   color: white;
+  display: grid;
 }
 
 .header {
   background-color: #393f4d;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .menu ul,
@@ -26,6 +38,11 @@
 
 .sidebar {
   background-color: #C50208;
+  grid-column: 1/2;
+  grid-row: 2/4;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 50px;
 }
 
 .sidebar .photo {
@@ -46,6 +63,8 @@
 
 .nav {
   background-color: #C50208;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 .nav ul li {
@@ -55,6 +74,12 @@
 
 .article {
   background-color: #bccbde;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
 }
 
 .article p {
@@ -83,9 +108,29 @@
 
 .footer {
   background-color: #393f4d;
+  grid-column: 1/3;
+  grid-row: 4/5;
 }
 
 .footer p {
   font-size: 13px;
   font-weight: normal;
+}
+.menu ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+  justify-content: left;
+}
+
+.nav ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
 }
