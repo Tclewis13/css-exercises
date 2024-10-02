@@ -10,8 +10,7 @@ body {
 }
 
 .header, .footer{
-  display: flex;
-  justify-content: space-between;
+  
 }
 
 img {
@@ -59,4 +58,6 @@ a{
 
 .footer{
   background: #eee;
+  display: flex;
+  justify-content: space-between;
 }
